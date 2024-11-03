@@ -26,7 +26,7 @@ class WriteToNotion:
 
 if __name__ == "__main__":
     pageData = {
-	"parent": { "page_id": "" },
+	"parent": { "page_id": "130a663f4aea808bb93bca83dd27826d" },
   "icon": {
   	"emoji": "🥬"
   },
@@ -36,40 +36,296 @@ if __name__ == "__main__":
 		}
 	},
 	"properties": {
-		"Name": {
-			"title": [
-				{
-					"text": {
-						"content": "Tuscan Kale"
-					}
-				}
-			]
-		},
-	},
-	"children": [
-		{
-			"object": "block",
-			"type": "heading_2",
-			"heading_2": {
-				"rich_text": [{ "type": "text", "text": { "content": "Lacinato kale" } }]
-			}
-		},
-		{
-			"object": "block",
-			"type": "paragraph",
-			"paragraph": {
-				"rich_text": [
-					{
-						"type": "text",
-						"text": {
-							"content": "Lacinato kale is a variety of kale with a long tradition in Italian cuisine, especially that of Tuscany. It is also known as Tuscan kale, Italian kale, dinosaur kale, kale, flat back kale, palm tree kale, or black Tuscan palm.",
-							"link": { "url": "https://en.wikipedia.org/wiki/Lacinato_kale" }
-						}
-					}
-				]
-			}
-		}
-	]
+        "title": [
+            {
+                "text": {
+                    "content": "🆗 Working"
+                }
+            }
+        ]
+    },
+    "children": [
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Idea"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Abstract"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Objectives"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Research Questions"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Hypothesis"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Planning"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Methodology"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Method 1"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "bulleted_list_item",
+            "bulleted_list_item": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Method 2"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Planning"
+                        }
+                    }
+                ]
+            }
+        },
+        # {
+        #     "object": "block",
+        #     "type": "link_preview",
+        #     "link_preview": {
+        #         "url": "https://www.notion.so/130a663f4aea80188ec6fff7999537f1?pvs=21"
+        #     }
+        # },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "LAB"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Literature Review"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Experimental Setup"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Experimental Setup Goes here."
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Results"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Discussion"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Conclusion"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Future Study"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Final Verdicts"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "Citation"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "object": "block",
+            "type": "numbered_list_item",
+            "numbered_list_item": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": "1."
+                        }
+                    }
+                ]
+            }
+        }
+    ]
 }
     wtn= WriteToNotion(NOTION_API_KEY="", database_id="")
     wtn.createPage(pageData=pageData)
