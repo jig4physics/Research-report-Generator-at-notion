@@ -5,10 +5,27 @@ class GenAI:
         # Initialize with model selection and API key setup
         self.model = model
         self.client = OpenAI(api_key=api_key)
+        self.josnFormat = {
+            'Idea': '',
+            'Abstract': '',
+            'Objectives': '',
+            'Hypothesis': '',
+            'Methodology': '',
+            'Experimental_setup': '',
+            'Conclusion': '',
+            'Future_Study': '',
+            'title': '',
+            'emoji': ''
+        }
+
+
     
-    def generate(self, prompt, max_tokens=50, temperature=0.7):
+    def generate(self, prompt, max_tokens=2048, temperature=0.7):
         # Format the conversation as a list of messages with role and content
-        conversation = [{"role": "user", "content": prompt}]
+        conversation = [
+            {"role": "system", "content": f"You are a helpful research assistant and only gives answer in JSON format {self.josnFormat} follwoing research idea."},
+            {"role": "user", "content": prompt}
+        ]
         
         try:
             response = self.client.chat.completions.create(

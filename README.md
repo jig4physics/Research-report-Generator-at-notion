@@ -5,3 +5,4 @@ NOTION_API_KEY=
 database_id=
 
 # OpenAI's Creds
+OPEN_AI=
