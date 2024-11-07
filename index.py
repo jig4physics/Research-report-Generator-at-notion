@@ -10,15 +10,14 @@ if __name__ == "__main__":
     gen = GenAI(api_key=os.getenv("OPEN_AI"))
     response = gen.generate(prompt="How to use plant as Computer. Give some logical ")
 
-        
+    
+    
     if isinstance(response, str):
         try:
             response = json.loads(response) 
-
-
             pageData = {
                 "parent": { 
-                    "page_id": "137a663f4aea8020bc3affc001fb32ef" 
+                    "page_id": os.getenv("PAGE_ID") 
                 },
                 "icon": {
                     "emoji": response["emoji"]

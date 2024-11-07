@@ -9,6 +9,7 @@ This project requires the following credentials in a `.env` file:
 
 - **Notion API Key**: For interacting with the Notion API to create and update Notion pages.
 - **OpenAI API Key**: For generating reports using OpenAI's LLM.
+- **Notion Page ID**: Specifies the Notion page where reports will be posted.
 
 ## .env Configuration
 
@@ -16,6 +17,7 @@ Create a `.env` file with the following variables:
 ```plaintext
 # Notion Credentials
 NOTION_API_KEY=
+PAGE_ID=
 
 # OpenAI Credentials
 OPEN_AI=
