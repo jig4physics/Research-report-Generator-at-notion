@@ -2,7 +2,7 @@ class ReadText:
     def __init__(self):
         pass
     
-    def read(self, path):
+    def read(self, path="idea.txt"):
         """
         Reads the content of a text file at the specified path.
 
@@ -25,5 +25,5 @@ class ReadText:
 if __name__ == "__main__":
     path = input("Enter the path to the text file: ")
     reader = ReadText()
-    result = reader.read(path)
+    result = reader.read()
     print(result)

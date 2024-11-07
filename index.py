@@ -1,4 +1,4 @@
-from utils import GenAI, WriteToNotion
+from utils import GenAI, WriteToNotion, ReadText
 import os
 from dotenv import load_dotenv
 import json
@@ -7,11 +7,14 @@ load_dotenv()
 
 if __name__ == "__main__":
 
+    reader = ReadText()
+    result = reader.read()
+    print("---IDEA---")
+    print(result)
+    print("---Genreating report---")
     gen = GenAI(api_key=os.getenv("OPEN_AI"))
-    response = gen.generate(prompt="How to use plant as Computer. Give some logical ")
-
-    
-    
+    response = gen.generate(prompt=result)
+    print("---Creating notion page---")
     if isinstance(response, str):
         try:
             response = json.loads(response) 
