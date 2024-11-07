@@ -7,22 +7,22 @@ load_dotenv()
 
 if __name__ == "__main__":
 
-    
     gen = GenAI(api_key=os.getenv("OPEN_AI"))
-    response = gen.generate(prompt="How to use plant as Computer.")
+    response = gen.generate(prompt="How to use plant as Computer. Give some logical ")
 
-
-
+        
     if isinstance(response, str):
         try:
             response = json.loads(response) 
+
+
             pageData = {
                 "parent": { 
                     "page_id": "137a663f4aea8020bc3affc001fb32ef" 
                 },
-                # "icon": {
-                #     "emoji": response.emoji
-                # },
+                "icon": {
+                    "emoji": response["emoji"]
+                },
                 "cover": {
                     "external": {
                         "url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Tuscankale.jpg"
@@ -51,10 +51,15 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
+                        "type": "paragraph",
+                        "paragraph": {
                             "rich_text": [
                                 {
                                     "text": {
@@ -77,10 +82,15 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
+                        "type": "paragraph",
+                        "paragraph": {
                             "rich_text": [
                                 {
                                     "text": {
@@ -103,10 +113,15 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
+                        "type": "paragraph",
+                        "paragraph": {
                             "rich_text": [
                                 {
                                     "text": {
@@ -129,6 +144,24 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
+                    {
+                        "object": "block",
+                        "type": "paragraph",
+                        "paragraph": {
+                            "rich_text": [
+                                {
+                                    "text": {
+                                        "content": "_NA_"
+                                    }
+                                }
+                            ]
+                        }
+                    },
                     {
                         "object": "block",
                         "type": "heading_2",
@@ -142,27 +175,19 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
+                        "type": "paragraph",
+                        "paragraph": {
                             "rich_text": [
                                 {
                                     "text": {
                                         "content": response["Hypothesis"]
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
-                            "rich_text": [
-                                {
-                                    "text": {
-                                        "content": "Planning"
                                     }
                                 }
                             ]
@@ -181,40 +206,19 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
+                        "type": "paragraph",
+                        "paragraph": {
                             "rich_text": [
                                 {
                                     "text": {
                                         "content": response["Methodology"]
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "object": "block",
-                        "type": "bulleted_list_item",
-                        "bulleted_list_item": {
-                            "rich_text": [
-                                {
-                                    "text": {
-                                        "content": "Method 1"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "object": "block",
-                        "type": "bulleted_list_item",
-                        "bulleted_list_item": {
-                            "rich_text": [
-                                {
-                                    "text": {
-                                        "content": "Method 2"
                                     }
                                 }
                             ]
@@ -233,27 +237,19 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
+                        "type": "paragraph",
+                        "paragraph": {
                             "rich_text": [
                                 {
                                     "text": {
-                                        "content": "LAB"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
-                            "rich_text": [
-                                {
-                                    "text": {
-                                        "content": "Literature Review"
+                                        "content": "_NA_"
                                     }
                                 }
                             ]
@@ -272,6 +268,11 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
                         "type": "paragraph",
@@ -298,6 +299,24 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
+                    {
+                        "object": "block",
+                        "type": "paragraph",
+                        "paragraph": {
+                            "rich_text": [
+                                {
+                                    "text": {
+                                        "content": "_NA_"
+                                    }
+                                }
+                            ]
+                        }
+                    },
                     {
                         "object": "block",
                         "type": "heading_2",
@@ -306,6 +325,24 @@ if __name__ == "__main__":
                                 {
                                     "text": {
                                         "content": "Discussion"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
+                    {
+                        "object": "block",
+                        "type": "paragraph",
+                        "paragraph": {
+                            "rich_text": [
+                                {
+                                    "text": {
+                                        "content": "_NA_"
                                     }
                                 }
                             ]
@@ -324,10 +361,15 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
+                        "type": "paragraph",
+                        "paragraph": {
                             "rich_text": [
                                 {
                                     "text": {
@@ -350,10 +392,15 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
-                        "type": "heading_2",
-                        "heading_2": {
+                        "type": "paragraph",
+                        "paragraph": {
                             "rich_text": [
                                 {
                                     "text": {
@@ -376,6 +423,11 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
                         "type": "heading_2",
@@ -389,6 +441,11 @@ if __name__ == "__main__":
                             ]
                         }
                     },
+                     {
+            "object": "block",
+            "type": "divider",
+            "divider": {}
+        },
                     {
                         "object": "block",
                         "type": "numbered_list_item",
@@ -396,7 +453,7 @@ if __name__ == "__main__":
                             "rich_text": [
                                 {
                                     "text": {
-                                        "content": "1."
+                                        "content": "_NA_"
                                     }
                                 }
                             ]
@@ -404,6 +461,7 @@ if __name__ == "__main__":
                     }
                 ]
             }
+
             wtn= WriteToNotion(NOTION_API_KEY=os.getenv("NOTION_API_KEY"))
             wtn.createPage(pageData=pageData)
 

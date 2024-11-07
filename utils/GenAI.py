@@ -15,7 +15,7 @@ class GenAI:
             'Conclusion': '',
             'Future_Study': '',
             'title': '',
-            'emoji': ''
+            'emoji': 'only one related to topic'
         }
 
 
