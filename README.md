@@ -28,7 +28,7 @@ OPEN_AI=
 To start the program, use the following command:
 
 ```bash
-python3 index.sh
+python3 index.py
 ```
 
 This script reads ideas from `idea.txt`, generates a report using OpenAI’s LLM, and posts the report to a Notion page.
